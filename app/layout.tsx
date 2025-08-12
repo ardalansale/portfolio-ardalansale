@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
+import MainNavbar from "@/components/MainNavbar";
+import LayoutContainer from "@/components/LayoutContainer"
 
 const ibmPlexMono = IBM_Plex_Mono({
   variable: "--font-ibm-plex-mono",
@@ -21,8 +23,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${ibmPlexMono.variable} antialiased`} >
-        {children}
+      <body className={`${ibmPlexMono.variable} antialiased`}>
+        <LayoutContainer>
+          <MainNavbar/>
+          <main>
+          {children}  
+          </main>
+        </LayoutContainer>
       </body>
     </html>
   );

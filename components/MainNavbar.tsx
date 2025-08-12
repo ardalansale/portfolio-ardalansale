@@ -1,7 +1,7 @@
 export default function MainNavbar() {
     return (
         <nav>
-            <ul>
+            <ul className="flex">
                 <li>Home</li>
                 <li>Work</li>
                 <li>Projects</li>
