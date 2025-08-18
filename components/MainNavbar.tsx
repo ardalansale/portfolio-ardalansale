@@ -16,7 +16,7 @@ export default function MainNavbar() {
     ];
 
     return ( // Navbar styling 
-        <nav className="pt-40 pb-12 font-normal text-black ">
+        <nav className="mt-40 mb-12 py-8 font-normal text-black bg-red-500">
             <ul className="flex gap-4">
             {links.map((link) => (
                 <li key={link.name}>
@@ -24,7 +24,7 @@ export default function MainNavbar() {
                     href={link.href}
                     className={`py-2 ${
                         pathname === link.href
-                        ? "text-gray-400 font-medium"
+                        ? "text-gray-400"
                         : "hover:underline"
                     }`}
                     >
