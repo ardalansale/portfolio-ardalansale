@@ -6,8 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation"; // Används för att markera aktiv länk i navbar baserat på aktuell sida
 
 export default function MainNavbar() {
-    const pathname = usePathname();
-
+    const pathname = usePathname(); // Array med alla länkar
     const links = [
         { name: "Home", href: "/" },
         { name: "Work", href: "/work" },
@@ -16,17 +15,17 @@ export default function MainNavbar() {
         { name: "Contact", href: "/contact" },
     ];
 
-    return (
-        <nav className="py-4 bg-green-500">
-            <ul className="flex gap-4 bg-blue-500 px-4">
+    return ( // Navbar styling 
+        <nav className="pt-40 pb-12 font-normal text-black ">
+            <ul className="flex gap-4">
             {links.map((link) => (
                 <li key={link.name}>
                     <Link
                     href={link.href}
-                    className={`px-2 py-1 rounded ${
+                    className={`py-2 ${
                         pathname === link.href
-                        ? "bg-white text-green-700 font-bold"
-                        : "text-white hover:underline"
+                        ? "text-gray-400 font-medium"
+                        : "hover:underline"
                     }`}
                     >
 
@@ -35,7 +34,7 @@ export default function MainNavbar() {
                     </Link>
                 </li>
             ))}
-        </ul>
+            </ul>
         </nav>
     )
 }
