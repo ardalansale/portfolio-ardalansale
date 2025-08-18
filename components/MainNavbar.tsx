@@ -1,5 +1,9 @@
+"use client";
+// "use client" behövs eftersom jag använder usePathname(), som är en React hook
+// och bara fungerar i Client Components. Utan denna rad får jag ett ett Ecmascript error.
+
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname } from "next/navigation"; // Används för att markera aktiv länk i navbar baserat på aktuell sida
 
 export default function MainNavbar() {
     const pathname = usePathname();
@@ -14,10 +18,24 @@ export default function MainNavbar() {
 
     return (
         <nav className="py-4 bg-green-500">
-            <ul className="flex gap-4 bg-blue-500">
-                {links.map((link) => (
-                    <                
-            </ul>
+            <ul className="flex gap-4 bg-blue-500 px-4">
+            {links.map((link) => (
+                <li key={link.name}>
+                    <Link
+                    href={link.href}
+                    className={`px-2 py-1 rounded ${
+                        pathname === link.href
+                        ? "bg-white text-green-700 font-bold"
+                        : "text-white hover:underline"
+                    }`}
+                    >
+
+                    {link.name}
+
+                    </Link>
+                </li>
+            ))}
+        </ul>
         </nav>
     )
 }
