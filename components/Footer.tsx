@@ -6,7 +6,7 @@ export default function Footer() {
     ];
 
     return (
-        <div className="bg-red-500 flex w-full justify-between items-center font-normal text-gray-600 py-8">
+        <div className="flex w-full justify-between items-center mt-10 py-2 font-normal text-gray-500">
             <p>© 2025 Ardalan Sale. All Rights Reserved.</p>
             <nav>
                 <ul className="flex gap-4">
