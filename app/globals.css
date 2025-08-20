@@ -18,6 +18,10 @@
   --font-mono: var(--font-ibm-plex-mono);
 }
 
+html {
+  scrollbar-gutter: stable; /* Sidan reserverar alltid plats för scrollbar */
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
