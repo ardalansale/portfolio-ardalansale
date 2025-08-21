@@ -14,10 +14,9 @@ export default function NotFound() {
             priority
             />
         </div>
-        <div className='flex flex-col gap-2 mx-auto p-4 text-center'>
-            <h1 className='text-4xl font-bold mb-3'>404 - Page not found</h1>
-            <p>Sorry, we can&apos;t find that page! It might be an old or maybe it moved. </p>
-            <br></br>
+        <div className='flex flex-col mx-auto p-4 text-center'>
+            <h1 className='text-4xl font-bold mb-4'>404 - Page not found</h1>
+            <p className='mb-10'>Sorry, we can&apos;t find that page! It might be an old or maybe it moved. </p>
             <Link href="/" className=' text-blue-500 hover:underline'>
             Go to the homepage
             </Link>

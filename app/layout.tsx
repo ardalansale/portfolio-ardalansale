@@ -6,6 +6,7 @@ import "./globals.css";
 import MainNavbar from "@/components/MainNavbar";
 import Footer from "@/components/Footer";
 import LayoutContainer from "@/components/LayoutContainer"
+import FadeWrapper from "@/components/FadeWrapper"
 
 // Font
 const ibmPlexMono = IBM_Plex_Mono({
@@ -25,18 +26,19 @@ export const metadata: Metadata = {
 // Sidstruktur för alla sidor
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode;}>) {
+
   return (
     <html lang="en">
       <body className={`${ibmPlexMono.variable} antialiased`}>
         <LayoutContainer>
           <MainNavbar/>
 
-          <main>
-          {children}  
-          </main>
+          <FadeWrapper>
+            <main>
+            {children}  
+            </main>
+          </FadeWrapper>
 
           <Footer/>
         </LayoutContainer>
