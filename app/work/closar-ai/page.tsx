@@ -9,7 +9,9 @@ export const metadata: Metadata = {
 export default function Projects() {
     return (
         <section>
-
+            <h1>
+                hi there
+            </h1>
         </section>
     );
 }

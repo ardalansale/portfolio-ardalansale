@@ -25,7 +25,7 @@ export default function MainNavbar() {
                     href={link.href}
                     className={`py-2 ${
                         pathname === link.href
-                        ? "text-gray-400"
+                        ? "text-gray-500"
                         : "hover:underline"
                     }`}
                     >
