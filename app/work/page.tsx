@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function Work() {
     return (
 
-        <section className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-8'>
+        <main className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-8'>
             {/* Med block innan <Link> fyller länken hela det utrymme som barnet (Card-komponenten) upptar. */}
 
             {/* 1. Closar AI */}
@@ -41,7 +41,7 @@ export default function Work() {
                 color="bg-gradient-to-r from-violet-400 to-gray-100"
                 title="Birds Relations"
                 category="HealthTech / SaaS"
-                description="Enhanced app usability with reviews, user tests, and wireframes, creating clearer flows and solutions.”"
+                description="Enhanced app usability with reviews, user tests, and wireframes, creating clearer flows and solutions."
                 />
             </Link>
 
@@ -85,6 +85,6 @@ export default function Work() {
                 />
             </Link>
 
-        </section>
+        </main>
     );
 }
