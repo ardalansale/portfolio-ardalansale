@@ -7,7 +7,7 @@ export default function NotFound() {
         <div>
             <Image
             src="/images/404-glass.png"
-            alt="404 message in pink glass"
+            alt="404-error text message in the form of 3d pink glass"
             width={600}
             height={372}
             className='mx-auto mb-12'

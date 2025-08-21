@@ -1,6 +1,4 @@
 // Kort för case studies under Home
-import Image from "next/image";
-
 interface Cardprops {
     color: string;
     title: string;
