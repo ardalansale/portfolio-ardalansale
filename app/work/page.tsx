@@ -1,13 +1,12 @@
-import { Metadata } from 'next';
-import Card from '@/components/Card';
-import Link from 'next/link';
-
-
 export const metadata: Metadata = {
     title: 'Work - Ardalan Sale Portfolio',
     description: 'Work  Ardalan Sale - Work done from internships and freelance',
     keywords: ['Ardalan Sale', 'developer', 'portfolio', 'work', 'showcase', 'freelance'],
 }
+
+import { Metadata } from 'next';
+import Card from '@/components/Card';
+import Link from 'next/link';
 
 export default function Work() {
     return (

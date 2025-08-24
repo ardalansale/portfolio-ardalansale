@@ -1,12 +1,18 @@
+export const metadata: Metadata = {
+    title: 'Home - Ardalan Sale',
+    description: 'Home page of portfolio',
+    keywords: ['Ardalan Sale', 'developer','ux','design', 'portfolio', 'home', 'landing page'],
+}
+
 export default function Home() {
   return (
     <main className="flex flex-col gap-4 max-w-150">
       <h1 className='text-4xl font-regular'>Ardalan Sale</h1>
-      <h2 className='text-4xl text-zinc-500'>UX Designer & Web Developer</h2>
+      <h1 className='text-4xl text-zinc-500'>UX Designer & Web Developer</h1>
       <div className="space-y-4 gap-4">
-        <p>A UX Designer transitioning into Frontend Development. I&apos;m passionate about understanding human behavior and translating those insights into intuitive digital experiences.</p>
-        <p>Currently, I&apos;m deepening my skills in HTML, CSS, JavaScript, React, and TypeScript through full-time studies at Lexicon IT Proffs in Stockholm. My goal is to create accessible, user-centered solutions that align with business objectives. More projects and case studies will be uploaded soon as I&apos;m currently working on exciting new case studies och projects.</p>
-        <p className="text-blue-600">I&apos;m currently seeking internship opportunities for the period October 30, 2025 - January 29, 2026.</p>
+        <p>I&apos;m a UX Designer making the leap into Frontend Development; blending design vision with the ability to bring it to life in code.</p>
+        <p>Fascinated by how people think, feel and interact, I shape those insights into digital experiences that guide, inspire, and make every interaction feel intentional. I believe the best digital experiences are born where human understanding meets technical precision; where every design choice is backed by empathy and every line of code has purpose.</p>
+        <p className="text-blue-600">I&apos;m currently studying at Lexicon IT-Proffs in Stockholm and looking for an internship from October 30, 2025 to January 29, 2026.</p>
       </div>
     </main>
   );
