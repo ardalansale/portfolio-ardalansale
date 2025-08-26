@@ -1,3 +1,5 @@
+import { Metadata } from 'next'
+
 export const metadata: Metadata = {
     title: 'Home - Ardalan Sale',
     description: 'Home page of portfolio',

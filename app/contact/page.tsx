@@ -5,7 +5,6 @@ export const metadata: Metadata = {
 }
 
 import { Metadata } from 'next'
-import Link from 'next/link'
 import ContactInfo, {ContactItem} from "@/components/ContactInfo"
 
 export default function Contact() {
