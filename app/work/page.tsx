@@ -5,7 +5,7 @@ export const metadata: Metadata = {
 }
 
 import { Metadata } from 'next';
-import Card from '@/components/Card';
+import Card from '@/components/WorkCard';
 import Link from 'next/link';
 
 export default function Work() {

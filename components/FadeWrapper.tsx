@@ -1,3 +1,5 @@
+// Gör att varje sida fade:ar in
+
 "use client";
 
 import { usePathname } from "next/navigation";

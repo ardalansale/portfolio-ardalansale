@@ -27,7 +27,7 @@ const sections = [
 
 export default function About() {
     return (
-        <main className="flex flex-row  gap-8">
+        <main className="flex flex-row gap-2">
             {/* Textyta */}
             <article className="flex flex-col flex-1 gap-8">
                 {sections.map((section, index) => (
@@ -40,12 +40,12 @@ export default function About() {
             </article>
 
             {/* Bild */}
-            <section className='flex flex-col flex-2 gap-8 items-center'>
+            <section className='flex flex-col flex-1 gap-2'>
                 <figure>
                     <Image
                         src="/images/ardalan.webp"
                         alt="A picture of me, Ardalan"
-                        width={350}
+                        width={250}
                         height={0}
                         className='rounded-md mx-auto'
                         priority
@@ -57,7 +57,7 @@ export default function About() {
                     <Image
                         src="/images/donut.webp"
                         alt="A pink donut made in Blender"
-                        width={350}
+                        width={250}
                         height={0}
                         className='rounded-md mx-auto'
                         priority
@@ -69,7 +69,7 @@ export default function About() {
                     <Image
                         src="/images/skyline.webp"
                         alt="a picture of a car in Gran Turismo 7"
-                        width={350}
+                        width={250}
                         height={0}
                         className='rounded-md mx-auto'
                         priority

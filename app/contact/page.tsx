@@ -12,7 +12,7 @@ export default function Contact() {
         {
             label: "Email",
             value: "ardalansale@gmail.com",
-            href: "mailto:ardalansaleh@gmail.com"
+            href: "mailto:ardalansale@gmail.com"
         },
         {
             label: "LinkedIn",
@@ -29,7 +29,7 @@ export default function Contact() {
     ]
 
     return (
-        <main className='flex flex-col items-center py-20 md:py-30 lg:py-40'>
+        <main className='flex flex-col items-center py-40'>
         <ContactInfo items={contactItems}/>
         </main>    
     );
