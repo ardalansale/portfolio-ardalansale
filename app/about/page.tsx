@@ -40,24 +40,12 @@ export default function About() {
             </article>
 
             {/* Bild */}
-            <section className='flex flex-col flex-1 gap-8 items-center'>
+            <section className='flex flex-col flex-2 gap-8 items-center'>
                 <figure>
                     <Image
                         src="/images/ardalan.webp"
                         alt="A picture of me, Ardalan"
-                        width={250}
-                        height={0}
-                        className='rounded-md mx-auto'
-                        priority
-                    />
-                    {/* <figcaption></figcaption> */}
-                </figure>
-
-                <figure>
-                    <Image
-                        src="/images/skyline.webp"
-                        alt="a picture of a car in Gran Turismo 7"
-                        width={250}
+                        width={350}
                         height={0}
                         className='rounded-md mx-auto'
                         priority
@@ -69,7 +57,19 @@ export default function About() {
                     <Image
                         src="/images/donut.webp"
                         alt="A pink donut made in Blender"
-                        width={250}
+                        width={350}
+                        height={0}
+                        className='rounded-md mx-auto'
+                        priority
+                    />
+                    {/* <figcaption></figcaption> */}
+                </figure>
+
+                <figure>
+                    <Image
+                        src="/images/skyline.webp"
+                        alt="a picture of a car in Gran Turismo 7"
+                        width={350}
                         height={0}
                         className='rounded-md mx-auto'
                         priority

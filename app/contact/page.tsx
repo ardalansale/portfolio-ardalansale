@@ -5,11 +5,33 @@ export const metadata: Metadata = {
 }
 
 import { Metadata } from 'next'
+import Link from 'next/link'
+import ContactInfo, {ContactItem} from "@/components/ContactInfo"
 
 export default function Contact() {
-    return (
-        <section>
+    const contactItems: ContactItem[] = [
+        {
+            label: "Email",
+            value: "ardalansale@gmail.com",
+            href: "mailto:ardalansaleh@gmail.com"
+        },
+        {
+            label: "LinkedIn",
+            value: "linkedin.com/in/ardalnsale",
+            href: "https://www.linkedin.com/in/ardalansale",
+            linkProps: {target: "_blank", rel: "noopener noreferrer"}
+        },
+        {
+            label: "Github",
+            value: "github.com/ardalansale",
+            href: "https://www.github.com/ardalansale",
+            linkProps: {target: "_blank", rel: "noopener noreferrer"}
+        }
+    ]
 
-        </section>
+    return (
+        <main className='flex flex-col items-center py-20 md:py-30 lg:py-40'>
+        <ContactInfo items={contactItems}/>
+        </main>    
     );
 }

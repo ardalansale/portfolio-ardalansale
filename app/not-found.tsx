@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function NotFound() {
     return (
-    <main className='flex flex-col py-20 md:py-30 lg:py-40 bg-pink-100 rounded-2xl'>
+    <main className='flex flex-col py-20 items-center md:py-30 lg:py-40 bg-pink-100 rounded-2xl'>
         <div>
             <Image
             src="/images/404-glass.webp"
