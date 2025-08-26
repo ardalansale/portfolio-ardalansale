@@ -27,7 +27,7 @@ const sections = [
 
 export default function About() {
     return (
-        <main className="flex flex-row gap-2">
+        <main className="flex flex-row gap-2 max-w-7xl p-6">
             {/* Textyta */}
             <article className="flex flex-col flex-1 gap-8">
                 {sections.map((section, index) => (

@@ -1,4 +1,4 @@
-// Kort för case studies under Home
+// Kort för case studies för Home-sidan
 interface Cardprops {
     color: string;
     title: string;

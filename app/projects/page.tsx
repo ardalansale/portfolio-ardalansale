@@ -5,11 +5,24 @@ export const metadata: Metadata = {
 }
 
 import { Metadata } from 'next'
+import ProjectCard from '@/components/ProjectCard'
 
 export default function Projects() {
     return (
-        <section>
+        <main className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-8 mx-auto p-6'>
+            <ProjectCard
+            title='hej'
+            description='hej'
+            tags={["Next.js", "TypeScript", "Tailwind"]}
+            demoUrl="https://www.google.se"
+            />
 
-        </section>
+            <ProjectCard
+            title='hej'
+            description='hej'
+            tags={["Next.js", "TypeScript", "Tailwind"]}
+            demoUrl="https://www.google.se"
+            />
+        </main>
     );
 }

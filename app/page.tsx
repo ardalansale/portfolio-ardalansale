@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-4 max-w-150">
+    <main className="flex flex-col gap-4 max-w-170 w-full p-6">
       <h1 className='text-4xl font-regular'>Ardalan Sale</h1>
       <h1 className='text-4xl text-zinc-500'>UX Designer & Web Developer</h1>
       <div className="space-y-4">
