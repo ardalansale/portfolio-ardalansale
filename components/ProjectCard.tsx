@@ -13,10 +13,10 @@ const ProjectCard = ({ title, description, tags, demoUrl}: ProjectProps) => {
         "Next.js": "bg-black text-white",
         Tailwind: "bg-cyan-100 text-cyan800",
         TypeScript: "bg-blue-200 text-blue-900",
-        JavaScript: "bg-yellow-100 text-yellow-800",
+        JavaScript: "bg-yellow-300 text-black",
         Node: "bg-green-100 text-green-800",
-        HTML: "bg-orange-200 text-white-100",
-        CSS: "bg-blue-400 text-white-100",
+        HTML: "bg-orange-300 text-black",
+        CSS: "bg-blue-400 text-white-300",
     };
 
 
