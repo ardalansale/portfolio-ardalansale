@@ -45,14 +45,14 @@ export default function About() {
                     <Image
                         src="/images/ardalan.webp"
                         alt="A picture of me, Ardalan"
-                        width={250}
+                        width={400}
                         height={0}
                         className='rounded-md mx-auto'
                         priority
                     />
                     {/* <figcaption></figcaption> */}
                 </figure>
-
+{/* 
                 <figure>
                     <Image
                         src="/images/donut.webp"
@@ -62,14 +62,13 @@ export default function About() {
                         className='rounded-md mx-auto'
                         priority
                     />
-                    {/* <figcaption></figcaption> */}
-                </figure>
+                </figure> */}
 
                 <figure>
                     <Image
                         src="/images/skyline.webp"
                         alt="a picture of a car in Gran Turismo 7"
-                        width={250}
+                        width={400}
                         height={0}
                         className='rounded-md mx-auto'
                         priority

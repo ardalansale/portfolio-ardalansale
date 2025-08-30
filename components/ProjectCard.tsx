@@ -34,7 +34,7 @@ const ProjectCard = ({ title, description, tags, demoUrl}: ProjectProps) => {
 
     return (
         <Wrapper>
-            <div className="flex flex-col p-5 gap-2 bg-white border-1 border-gray-100 rounded-lg cursor-pointer shadow-md hover:shadow-xl transition-shadow duration-300">
+            <div className="flex flex-col p-5 gap-2 bg-white border-1 border-gray-100 rounded-lg cursor-pointer shadow-md hover:shadow-xl transition-shadow duration-200">
                 <h3 className="font-semibold">{title}</h3>
                 <p className="text-gray-700 mb-4">{description}</p>
                 <div className="flex flex-wrap gap-2">

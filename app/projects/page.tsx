@@ -13,8 +13,12 @@ export default function Projects() {
         <main className='flex flex-col w-full gap-20 mx-auto p-6'>
 
             {/* Frontend-projekt */}
-            <section className='space-y-6'>
-                <h2 className="text-2xl">Dev</h2>
+            <section className='space-y-10'>
+                <div className='flex flex-col gap-2'>
+                    <h2 className="text-2xl font-medium">Dev</h2>
+                    <p>Here are some of my projects which I have developed during the time of my learning.</p>
+                </div>
+
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
                 {/* 5. Daily Quote */}
                 <ProjectCard
@@ -61,9 +65,19 @@ export default function Projects() {
 
             {/* Grafiska-project */}
             <section className='space-y-6'>
-                <h2 className="text-2xl">Graphics</h2>
+                <div className='flex flex-col gap-2'>
+                    <h2 className="text-2xl font-medium">Graphics</h2>
+                    <p>Here are some of my projects which I have created using Blender and Procreate.</p>
+                </div>
+
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
-                
+
+                   {/* 1. Ardi Sketch */}
+                <ProjectGraphics
+                src="/images/projects/donut.webp"
+                alt="a black and white sketch of me"
+                />
+
                 {/* 1. Ardi Sketch */}
                 <ProjectGraphics
                 src="/images/projects/ardi-sketch.webp"
@@ -172,6 +186,11 @@ export default function Projects() {
                 alt="a black and white sketch of me"
                 />
                 
+                {/* Abstract */}
+                <ProjectGraphics
+                src="/images/projects/abstract-final.webp"
+                alt="a black and white sketch of me"
+                />
                 </div>
             </section>
         </main>
