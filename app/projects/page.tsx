@@ -6,6 +6,7 @@ export const metadata: Metadata = {
 
 import { Metadata } from 'next'
 import ProjectCard from '@/components/ProjectCard'
+import ProjectGraphics from '@/components/ProjectGraphics'
 
 export default function Projects() {
     return (
@@ -59,12 +60,121 @@ export default function Projects() {
             {/* Grafiska-project */}
             <h2 className="text-2xl">Graphics</h2>
             <section className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
+                
+            {/* 1. Ardi Sketch */}
+            <ProjectGraphics
+            src="/images/projects/ardi-sketch.webp"
+            alt="a black and white sketch of me"
+            />
+
+            {/* 2. Vin-Rab */}
+            <ProjectGraphics
+            src="/images/projects/vin-rab.webp"
+            alt="a black and white sketch of me"
+            />
+
+            {/* 3. Sale-Wolf */}
+            <ProjectGraphics
+            src="/images/projects/sale-wolf.webp"
+            alt="a black and white sketch of me"
+            />
+
+            {/* 4. stressed-out */}
+            <ProjectGraphics
+            src="/images/projects/stressed-out.webp"
+            alt="a black and white sketch of me"
+            />
+
+            {/* 5. Lucho */}
+            <ProjectGraphics
+            src="/images/projects/lucho.webp"
+            alt="a black and white sketch of me"
+            />
+            
+            {/* 6. Susy-Circle */}
+            <ProjectGraphics
+            src="/images/projects/susy-circle.webp"
+            alt="a black and white sketch of me"
+            />
+
+            {/* 7. Olive */}
+            <ProjectGraphics
+            src="/images/projects/olive.webp"
+            alt="a black and white sketch of me"
+            />
+
+            {/* 8. Barry-blue */}
+            <ProjectGraphics
+            src="/images/projects/barryblue.webp"
+            alt="a black and white sketch of me"
+            />
+
+            {/* 10. Smirk */}
+            <ProjectGraphics
+            src="/images/projects/smirk.webp"
+            alt="a black and white sketch of me"
+            />
+
+            {/* 11. First Flower */}
+            <ProjectGraphics
+            src="/images/projects/first-flower.webp"
+            alt="a black and white sketch of me"
+            />
+
+            {/* 12. Sunhill */}
+            <ProjectGraphics
+            src="/images/projects/sunhill.webp"
+            alt="a black and white sketch of me"
+            />
+
+            {/* 13. Pink Ghost */}
+            <ProjectGraphics
+            src="/images/projects/pink-ghost.webp"
+            alt="a black and white sketch of me"
+            />
+
+            {/* 14. Snizzle */}
+            <ProjectGraphics
+            src="/images/projects/snizzle.webp"
+            alt="a black and white sketch of me"
+            />
+
+            {/* 15. Fangman */}
+            <ProjectGraphics
+            src="/images/projects/fangman.webp"
+            alt="a black and white sketch of me"
+            />
+
+            {/* 16. Tooth Demon */}
+            <ProjectGraphics
+            src="/images/projects/tooth-demon.webp"
+            alt="a black and white sketch of me"
+            />
+
+            {/* 17. Donnie */}
+            <ProjectGraphics
+            src="/images/projects/donnie.webp"
+            alt="a black and white sketch of me"
+            />
+
+            {/* 18. DottheOne */}
+            <ProjectGraphics
+            src="/images/projects/dottheone.webp"
+            alt="a black and white sketch of me"
+            />
+            
+            {/* 19. DotDot */}
+            <ProjectGraphics
+            src="/images/projects/dotdot.webp"
+            alt="a black and white sketch of me"
+            />
+
             </section>
 
-            {/* UX/UI */}
+            {/* UX/UI
             <h2 className="text-2xl">UX/UI</h2>
             <section className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
-            </section>
+            </section> */}
         </main>
     );
 }
