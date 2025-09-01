@@ -1,7 +1,7 @@
 export const metadata: Metadata = {
     title: 'About - Ardalan Sale',
     description: 'Learn more about me',
-    keywords: ['Ardalan Sale', 'developer','ux','design', 'portfolio', 'about'],
+    keywords: ['Ardalan Sale', 'developer','ux','design', 'portfolio', 'about', 'stockholm', 'blender', '3d graphics', 'gran turismo 7', 'gt7'],
 };
 
 import { Metadata } from 'next';
@@ -39,7 +39,7 @@ export default function About() {
                 ))}
             </article>
 
-            {/* Bild */}
+            {/* Bildyta */}
             <section className='flex flex-col flex-1 gap-2'>
                 <figure>
                     <Image
@@ -52,17 +52,6 @@ export default function About() {
                     />
                     {/* <figcaption></figcaption> */}
                 </figure>
-{/* 
-                <figure>
-                    <Image
-                        src="/images/donut.webp"
-                        alt="A pink donut made in Blender"
-                        width={250}
-                        height={0}
-                        className='rounded-md mx-auto'
-                        priority
-                    />
-                </figure> */}
 
                 <figure>
                     <Image

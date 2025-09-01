@@ -13,9 +13,9 @@ export default function Projects() {
         <main className='flex flex-col w-full gap-20 mx-auto p-6'>
 
             {/* Frontend-projekt */}
-            <section className='space-y-10'>
-                <div className='flex flex-col gap-2'>
-                    <h2 className="text-2xl font-medium">Dev</h2>
+            <section className='space-y-8'>
+                <div className='flex flex-col gap-4'>
+                    <h1 className="text-4xl font-medium">Dev</h1>
                     <p>Here are some of my projects which I have developed during the time of my learning.</p>
                 </div>
 
@@ -64,10 +64,10 @@ export default function Projects() {
             </section>
 
             {/* Grafiska-project */}
-            <section className='space-y-6'>
-                <div className='flex flex-col gap-2'>
-                    <h2 className="text-2xl font-medium">Graphics</h2>
-                    <p>Here are some of my projects which I have created using Blender and Procreate.</p>
+            <section className='space-y-8'>
+                <div className='flex flex-col gap-4'>
+                    <h1 className="text-4xl font-medium">Graphics</h1>
+                    <p>Here are some of my projects which I have created using Blender, Photoshop and Procreate.</p>
                 </div>
 
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>

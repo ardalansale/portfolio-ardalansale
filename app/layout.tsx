@@ -20,7 +20,7 @@ const ibmPlexMono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   title: "Ardalan Sale Portfolio",
   description: "Ardalan Sale's portfolio and showcase",
-  keywords: ['Ardalan Sale', ' ux designer', 'ui designer', 'portfolio', 'sweden', 'stocholm', 'sverige', 'frilans', 'freelance', 'ux/ui', 'frontend', 'developer', 'utvecklare'],
+  keywords: ['Ardalan Sale', ' ux designer', 'ui designer', 'portfolio', 'sweden', 'stockholm', 'sverige', 'frilans', 'freelance', 'ux/ui', 'frontend', 'developer', 'utvecklare'],
 };
 
 // Sidstruktur för alla sidor
@@ -30,7 +30,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${ibmPlexMono.variable} antialiased`}>
+  <body className={`${ibmPlexMono.variable} antialiased`}>
         <LayoutContainer>
           <MainNavbar/>
 

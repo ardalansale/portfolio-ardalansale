@@ -16,7 +16,7 @@ export default function MainNavbar() {
     ];
 
     return ( // Navbar styling 
-        <nav className="mt-40 mb-20 py-2 font-normal text-black">
+        <nav className="mt-20 mb-10 py-2 font-normal text-black">
                         {/* mb-10 py-2  = 48 px avstånd till nedre objekt */}
             <ul className="flex gap-4">
             {links.map((link) => (

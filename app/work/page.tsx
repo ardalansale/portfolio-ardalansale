@@ -15,7 +15,7 @@ export default function Work() {
             {/* Med block innan <Link> fyller länken hela det utrymme som barnet (Card-komponenten) upptar. */}
 
             {/* 1. Closar AI */}
-            <Link href="/work/closar-ai" className="block"> 
+            <Link href="UnderConstruction" className="block"> 
                 <Card
                 color="bg-gradient-to-r from-blue-600 to-gray-100"
                 title="Closar AI"
