@@ -17,7 +17,7 @@ export default function Projects() {
             <section className='projects-section'>
                 <div className='projects-section__header'>
                     <h1 className='projects-section__title'>Dev</h1>
-                    <p className='projects-section__description'>Here are some of the projects I&apos;ve built throughout my learning journey. Using technologies like HTML, CSS, JavaScript, Tailwind, Next.js, and Node.js, I&apos;ve explored everything from responsive design to full-stack development. Each project reflects a new skill, a challenge overcome and a step forward in my growth as a developer.</p>
+                    <h3 className='projects-section__description'>Here are some of the projects I&apos;ve built throughout my learning journey. Using technologies like HTML, CSS, JavaScript, Tailwind, Next.js, and Node.js, I&apos;ve explored everything from responsive design to full-stack development. Each project reflects a new skill, a challenge overcome and a step forward in my growth as a developer.</h3>
                 </div>
 
                 <div className='projects-section__items'>

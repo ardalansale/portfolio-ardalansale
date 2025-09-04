@@ -41,9 +41,8 @@ body {
 
 
 /* Global */
-
 h1 {
-  @apply text-4xl font-medium ;
+  @apply text-4xl font-medium;
 }
 
 h2 {
@@ -51,15 +50,12 @@ h2 {
 }
 
 h3 {
-  @apply font-semibold;
+  @apply text-lg;
 }
 
-
-/* a {
-  @apply no-underline hover:underline;
-} 
-  ** Förstörde korten i Work **
-*/
+h4 {
+  @apply font-medium;
+}
 
 /* Projects */
 .projects-section {
@@ -71,7 +67,7 @@ h3 {
 }
 
 .projects-section__title {
-  @apply text-4xl font-medium;
+  @apply text-4xl ;
 }
 
 .projects-section__description {

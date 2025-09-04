@@ -10,7 +10,7 @@ export default function ProjectMotion({ src, alt, demoUrl }: ProjectMotionProps)
     const isVideo = demoUrl?.includes(".mp4");
 
     return (
-        <div className="bg-white  rounded-lg border-gray-400 shadow-md p-2">
+        <div className="bg-white rounded-lg border-gray-400 shadow-md">
             {isVideo && demoUrl ? (
             <video
                 controls
