@@ -14,13 +14,13 @@ export default function Projects() {
         <main className='flex flex-col w-full gap-20 mx-auto p-6'>
 
             {/* Frontend-projekt */}
-            <section className='space-y-8'>
-                <div className='flex flex-col gap-4'>
-                    <h1 className="text-4xl font-medium">Dev</h1>
-                    <p className='text-gray-600 text-lg'>Here are some of the projects I&apos;ve built throughout my learning journey. Using technologies like HTML, CSS, JavaScript, Tailwind, Next.js, and Node.js, I&apos;ve explored everything from responsive design to full-stack development. Each project reflects a new skill, a challenge overcome and a step forward in my growth as a developer.</p>
+            <section className='projects-section'>
+                <div className='projects-section__header'>
+                    <h1 className='projects-section__title'>Dev</h1>
+                    <p className='projects-section__description'>Here are some of the projects I&apos;ve built throughout my learning journey. Using technologies like HTML, CSS, JavaScript, Tailwind, Next.js, and Node.js, I&apos;ve explored everything from responsive design to full-stack development. Each project reflects a new skill, a challenge overcome and a step forward in my growth as a developer.</p>
                 </div>
 
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
+                <div className='projects-section__items'>
                 {/* 5. Daily Quote */}
                 <ProjectDev
                 title='5. Daily Quote'
@@ -65,13 +65,13 @@ export default function Projects() {
             </section>
 
             {/* Grafiska-project */}
-            <section className='space-y-8'>
-                <div className='flex flex-col gap-4'>
-                    <h1 className="text-4xl font-medium">Graphics</h1>
-                    <p className='text-gray-600 text-lg'>A collection of visual work spanning 3D modeling, digital painting, photo manipulation, and concept design. Created using Blender, Photoshop, and Procreate to explore different creative possibilities.</p>
+            <section className='projects-section'>
+                <div className='projects-section__header'>
+                    <h1 className='projects-section__title'>Graphics</h1>
+                    <p className='projects-section__description'>A collection of visual work spanning 3D modeling, digital painting, photo manipulation, and concept design. Created using Blender, Photoshop, and Procreate to explore different creative possibilities.</p>
                 </div>
 
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
+                <div className='projects-section__items'>
 
                    {/* 1. Ardi Sketch */}
                 <ProjectGraphics
@@ -196,13 +196,13 @@ export default function Projects() {
             </section>
 
              {/* Video-project */}
-            <section className='space-y-8'>
-                <div className='flex flex-col gap-4'>
-                    <h1 className="text-4xl font-medium">Videos / Motion</h1>
-                    <p className='text-gray-600 text-lg'>A collection of video work spanning editing, motion graphics, and 3D animation. Created in Premiere Pro and Blender </p>
+            <section className='projects-section'>
+                <div className='projects-section__header'>
+                    <h1 className='text-4xl font-medium'>Videos / Motion</h1>
+                    <p className='projects-section__description'>A collection of video work spanning editing, motion graphics, and 3D animation. Created in Premiere Pro and Blender </p>
                 </div>
 
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
+                <div className='projects-section__items'>
 
                 {/* Ozweego */}
                 <ProjectMotion

@@ -6,7 +6,7 @@ type AboutSectionProps = {
 export default function AboutSection({title, content}: AboutSectionProps) {
     return (
         <section className="flex flex-col gap-4">
-            <h2 className="text-2xl font-medium">{title}</h2>
+            <h2>{title}</h2>
             <p>{content}</p>
         </section>
     )

@@ -11,7 +11,7 @@ import Link from 'next/link';
 export default function Work() {
     return (
 
-        <main className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-8 mx-auto p-6'>
+        <main className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 w-full gap-8 mx-auto p-6'>
             {/* Med block innan <Link> fyller länken hela det utrymme som barnet (Card-komponenten) upptar. */}
 
             {/* 1. Closar AI */}

@@ -40,7 +40,7 @@ export default function About() {
             </article>
 
             {/* Bildyta */}
-            <section className='flex flex-col flex-1 gap-2'>
+            <section className='flex flex-col flex-1 gap-4'>
                 <figure>
                     <Image
                         src="/images/ardalan.webp"
@@ -50,7 +50,6 @@ export default function About() {
                         className='rounded-md mx-auto'
                         priority
                     />
-                    {/* <figcaption></figcaption> */}
                 </figure>
 
                 <figure>
@@ -62,7 +61,6 @@ export default function About() {
                         className='rounded-md mx-auto'
                         priority
                     />
-                    {/* <figcaption></figcaption> */}
                 </figure>
             </section>
         </main>

@@ -6,10 +6,9 @@ export default function Footer() {
     ];
 
     return (
-        <div className="flex flex-row w-full justify-center items-center mt-30 mb-30 py-2 font-normal text-gray-400">
-            <p>© 2025 Ardalan Sale. All Rights Reserved.</p>
-            {/* <nav>
-                <ul className="flex gap-4">
+        <div className="flex flex-col gap-8 w-full justify-center items-center mt-30 mb-30 py-2">
+            <nav>
+                <ul className='flex gap-4 text-gray-400'>
                 {links.map((link) => (
                     <li key={link.name}>
                         <a
@@ -23,7 +22,8 @@ export default function Footer() {
                     </li>
                 ))}
                 </ul>
-            </nav> */}
+            </nav>
+            <p className='text-gray-300'>© 2025 Ardalan Sale. All Rights Reserved.</p>
         </div>
     )
 };

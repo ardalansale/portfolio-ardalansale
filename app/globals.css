@@ -38,3 +38,46 @@ body {
 .fade-in {
   animation: fadeIn 0.4s ease-out both;
 }
+
+
+/* Global */
+
+h1 {
+  @apply text-4xl font-medium ;
+}
+
+h2 {
+  @apply text-2xl;
+}
+
+h3 {
+  @apply font-semibold;
+}
+
+
+/* a {
+  @apply no-underline hover:underline;
+} 
+  ** Förstörde korten i Work **
+*/
+
+/* Projects */
+.projects-section {
+  @apply space-y-10;
+}
+
+.projects-section__header {
+  @apply flex flex-col gap-4;
+}
+
+.projects-section__title {
+  @apply text-4xl font-medium;
+}
+
+.projects-section__description {
+  @apply text-gray-600 text-lg;
+}
+
+.projects-section__items {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8;
+}

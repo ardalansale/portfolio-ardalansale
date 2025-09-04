@@ -14,7 +14,7 @@ export default function ProjectGraphics ({ src, alt, className }: ProjectGraphic
             alt={alt}
             width={400}
             height={300}
-            className="rounded-lg object-cover"
+            className='rounded-lg object-cover'
             />
         </div>
     )

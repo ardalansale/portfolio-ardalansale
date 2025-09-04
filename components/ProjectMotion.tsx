@@ -15,7 +15,7 @@ export default function ProjectMotion({ src, alt, demoUrl }: ProjectMotionProps)
             <video
                 controls
                 width="100%"
-                className="rounded-lg"
+                className='rounded-lg'
             >
                 <source src={demoUrl} type="video/mp4" />
                 Din webbläsare stödjer inte video-taggen.
@@ -26,7 +26,7 @@ export default function ProjectMotion({ src, alt, demoUrl }: ProjectMotionProps)
                 alt={alt}
                 width={600}
                 height={400}
-                className="rounded-lg object-cover"
+                className='rounded-lg object-cover'
             />
             )}
         </div>
