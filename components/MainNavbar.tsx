@@ -16,9 +16,9 @@ export default function MainNavbar() {
     ];
 
     return ( // Navbar styling 
-        <nav className="mt-20 mb-10 py-2 font-normal text-black">
+        <nav className="flex flex-col justify-center items-center mt-30 mb-30 py-2 font-normal text-black">
                         {/* mb-10 py-2  = 48 px avstånd till nedre objekt */}
-            <ul className="flex gap-4">
+            <ul className="flex gap-8">
             {links.map((link) => (
                 <li key={link.name}>
                     <Link
@@ -38,4 +38,4 @@ export default function MainNavbar() {
             </ul>
         </nav>
     )
-}
+};

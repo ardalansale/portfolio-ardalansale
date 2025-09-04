@@ -4,7 +4,7 @@ interface Cardprops {
     title: string;
     category: string
     description: string;
-}
+};
 
 export default function Card ({ color, title, category, description }: Cardprops) {
     return (
@@ -15,4 +15,4 @@ export default function Card ({ color, title, category, description }: Cardprops
             <p className="text-gray-700">{description}</p>
         </div>
     );
-}
+};

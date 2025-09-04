@@ -3,7 +3,7 @@ export type ContactItem = {
     value: string;
     href?: string;
     linkProps?: React.AnchorHTMLAttributes<HTMLAnchorElement>;
-}
+};
 
 type ContactInfoProps = {
     items: ContactItem[];
@@ -30,4 +30,4 @@ export default function ContactInfo({items}: ContactInfoProps) {
             ))}
         </address>
     );
-}
+};

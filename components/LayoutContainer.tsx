@@ -6,4 +6,4 @@ export default function LayoutContainer({ children }: { children: React.ReactNod
             {children}
         </div>
     )
-}
+};

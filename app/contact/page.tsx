@@ -29,7 +29,7 @@ export default function Contact() {
     ]
 
     return (
-        <main className='flex flex-col items-center py-40'>
+        <main className='flex flex-col items-center py-40 p-6'>
         <ContactInfo items={contactItems}/>
         </main>    
     );

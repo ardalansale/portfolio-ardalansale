@@ -5,8 +5,9 @@ export const metadata: Metadata = {
 }
 
 import { Metadata } from 'next'
-import ProjectCard from '@/components/ProjectCard'
+import ProjectDev from '@/components/ProjectDev'
 import ProjectGraphics from '@/components/ProjectGraphics'
+import ProjectMotion from '@/components/ProjectMotion'
 
 export default function Projects() {
     return (
@@ -16,12 +17,12 @@ export default function Projects() {
             <section className='space-y-8'>
                 <div className='flex flex-col gap-4'>
                     <h1 className="text-4xl font-medium">Dev</h1>
-                    <p>Here are some of my projects which I have developed during the time of my learning.</p>
+                    <p className='text-gray-600 text-lg'>Here are some of the projects I&apos;ve built throughout my learning journey. Using technologies like HTML, CSS, JavaScript, Tailwind, Next.js, and Node.js, I&apos;ve explored everything from responsive design to full-stack development. Each project reflects a new skill, a challenge overcome and a step forward in my growth as a developer.</p>
                 </div>
 
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
                 {/* 5. Daily Quote */}
-                <ProjectCard
+                <ProjectDev
                 title='5. Daily Quote'
                 description='This is my first project using an API. It displays an inspirational quote each day, fetched from the ZenQuotes API.
                 I built it using HTML, CSS, and JavaScript, and learned how to handle API requests, CORS issues, and local storage.'
@@ -30,7 +31,7 @@ export default function Projects() {
                 />
 
                 {/* 4. Planned Planthood */}            
-                <ProjectCard
+                <ProjectDev
                 title='4. Planned Planthood'
                 description='This project is an assignment for my training program, focusing on learning to use semantic HTML, the BEM methodology for CSS class naming, and creating a structured and accessible website with CSS.'
                 tags={["HTML", "CSS"]}
@@ -38,7 +39,7 @@ export default function Projects() {
                 />
 
                 {/* 3. Beställlningsformulär */}
-                <ProjectCard
+                <ProjectDev
                 title='3. Beställningsformulär'
                 description='HTML form exercise focused on semantic markup, accessibility, and validation. Built to practice proper form structure, labeling, fieldset/legend usage, and HTML5 input types.'
                 tags={["HTML", "CSS", "JavaScript"]}
@@ -46,7 +47,7 @@ export default function Projects() {
                 />
 
                 {/* 2. Tiramisu TOK */}
-                <ProjectCard
+                <ProjectDev
                 title='2. Tiramisu Recipe'
                 description='A simple webpage showcasing a classic Tiramisu recipe. The project is built with HTML and CSS and was created for a Test & Assessment assignment. I made this as a trial to see if I would be accepted into the Lexicon training program.'
                 tags={["HTML", "CSS"]}
@@ -54,7 +55,7 @@ export default function Projects() {
                 />
 
                 {/* 1. Closar AI */}
-                <ProjectCard
+                <ProjectDev
                 title='1. Closar AI - Log In'
                 description='This is a simple login page created as part of my thesis project at Closar AI. The purpose of the page is to prioritize simplicity and accessibility through strong color contrasts and as few distractions as possible.'
                 tags={["HTML", "CSS", "JavaScript"]}
@@ -67,7 +68,7 @@ export default function Projects() {
             <section className='space-y-8'>
                 <div className='flex flex-col gap-4'>
                     <h1 className="text-4xl font-medium">Graphics</h1>
-                    <p>Here are some of my projects which I have created using Blender, Photoshop and Procreate.</p>
+                    <p className='text-gray-600 text-lg'>A collection of visual work spanning 3D modeling, digital painting, photo manipulation, and concept design. Created using Blender, Photoshop, and Procreate to explore different creative possibilities.</p>
                 </div>
 
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
@@ -190,6 +191,24 @@ export default function Projects() {
                 <ProjectGraphics
                 src="/images/projects/abstract-final.webp"
                 alt="a black and white sketch of me"
+                />
+                </div>
+            </section>
+
+             {/* Video-project */}
+            <section className='space-y-8'>
+                <div className='flex flex-col gap-4'>
+                    <h1 className="text-4xl font-medium">Videos / Motion</h1>
+                    <p className='text-gray-600 text-lg'>A collection of video work spanning editing, motion graphics, and 3D animation. Created in Premiere Pro and Blender </p>
+                </div>
+
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
+
+                {/* Ozweego */}
+                <ProjectMotion
+                src="/images/videos/ozweego.webp"
+                alt="a black and white sketch of me"
+                demoUrl="https://cdn-prod-ccv.adobe.com/IMAwIA4BDEC/rend/IMAwIA4BDEC_576.mp4?hdnts=st%3D1757015819%7Eexp%3D1757275019%7Eacl%3D%2Fshared_assets%2Fimage%2F*%21%2Fz%2FIMAwIA4BDEC%2Frend%2F*%21%2Fi%2FIMAwIA4BDEC%2Frend%2F*%21%2FIMAwIA4BDEC%2Frend%2F*%21%2FIMAwIA4BDEC%2Fimage%2F*%21%2FIMAwIA4BDEC%2Fcaptions%2F*%7Ehmac%3Dd39c3d7110525131cf8635748296c01012536f883ec28a1bdf7249575396781d"
                 />
                 </div>
             </section>

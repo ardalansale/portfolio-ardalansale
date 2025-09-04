@@ -1,14 +1,14 @@
-import Image from 'next/image'
+import Image from 'next/image';
 
 interface ProjectGraphicsProps {
-    src: string,
-    alt: string,
-    className?: string,
-}
+    src: string;
+    alt: string;
+    className?: string;
+};
 
 export default function ProjectGraphics ({ src, alt, className }: ProjectGraphicsProps) {
     return (
-        <div className={`flex flex-col p-5 gap-2 bg-white border border-gray-100 rounded-lg cursor-pointer shadow-md hover:shadow-xl transition-shadow duration-200 ${className}`} >
+        <div className={`flex flex-col justify-center items-center p-6 gap-2 bg-white border border-gray-100 rounded-lg cursor-pointer shadow-md hover:shadow-xl transition-shadow duration-200 ${className}`} >
             <Image
             src={src}
             alt={alt}
@@ -18,4 +18,4 @@ export default function ProjectGraphics ({ src, alt, className }: ProjectGraphic
             />
         </div>
     )
-}
+};

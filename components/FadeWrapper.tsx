@@ -11,4 +11,4 @@ export default function FadeWrapper({ children }: { children: React.ReactNode })
         {children}
         </div>
     );
-}
+};

@@ -3,9 +3,9 @@ type ProjectProps = {
     description: string;
     tags: string[];
     demoUrl?: string;
-}
+};
 
-const ProjectCard = ({ title, description, tags, demoUrl}: ProjectProps) => {
+const ProjectDev = ({ title, description, tags, demoUrl}: ProjectProps) => {
 
     // Färg för specifika taggar
     const tagColors: Record<string, string> = {
@@ -54,4 +54,4 @@ const ProjectCard = ({ title, description, tags, demoUrl}: ProjectProps) => {
     );
 };
 
-export default ProjectCard;
+export default ProjectDev;
