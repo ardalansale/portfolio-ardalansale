@@ -11,7 +11,7 @@ import ProjectMotion from '@/components/ProjectMotion'
 
 export default function Projects() {
     return (
-        <main className='flex flex-col w-full gap-20 mx-auto p-6'>
+        <main className='flex flex-col w-full gap-40 mx-auto p-6'>
 
             {/* Frontend-projekt */}
             <section className='projects-section'>
