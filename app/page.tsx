@@ -14,8 +14,8 @@ export default function Home() {
         <h1 className='text-3xl text-cyan-500'>UX Designer & Web Developer</h1>
       </div>
       <div className='space-y-4 '>
-        <p>I&apos;m a UX Designer making the leap into Frontend Development; blending design vision with the ability to bring it to life in code.</p>
-        <p>Fascinated by how people think, feel and interact, I shape those insights into digital experiences that guide, inspire, and make every interaction feel intentional. I believe the best digital experiences are born where human understanding meets technical precision; where every design choice is backed by empathy and every line of code has purpose.</p>
+        <p>UX Designer who also codes. I handle both the design process and technical implementation.</p>
+        <p>Fascinated by how people think, feel and interact, I shape those insights into digital experiences that guide, inspire, and make every interaction feel intentional. Working from both design and development perspectives, I create digital products that make sense to users. The best solutions come from understanding both user needs and technical realities.</p>
         <p>I&apos;m currently studying at Lexicon IT-Proffs in Stockholm and looking for an internship from October 30, 2025 to January 29, 2026.</p>
       </div>
     </main>

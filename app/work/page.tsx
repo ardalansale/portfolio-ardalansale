@@ -15,7 +15,7 @@ export default function Work() {
             {/* Med block innan <Link> fyller länken hela det utrymme som barnet (Card-komponenten) upptar. */}
 
             {/* 1. Closar AI */}
-            <Link href="UnderConstruction" className="block"> 
+            <Link href="/under-construction" className="block"> 
                 <Card
                 color="bg-gradient-to-r from-blue-600 to-gray-100"
                 title="Closar AI"
@@ -25,7 +25,7 @@ export default function Work() {
             </Link>
 
             {/* 2. WEIQ */}
-            <Link href="/work/weiq" className="block"> 
+            <Link href="/under-construction" className="block"> 
                 <Card
                 color="bg-gradient-to-r from-rose-400 to-purple-600"
                 title="WEIQ"
@@ -35,7 +35,7 @@ export default function Work() {
             </Link>
 
             {/* 3. Birds Relations  */}
-            <Link href="/work/birds-relations" className="block"> 
+            <Link href="/under-construction" className="block"> 
                 <Card
                 color="bg-gradient-to-r from-violet-400 to-gray-100"
                 title="Birds Relations"
@@ -45,7 +45,7 @@ export default function Work() {
             </Link>
 
             {/* 4. Sigma  */}
-            <Link href="/work/sigma" className="block"> 
+            <Link href="/under-construction" className="block"> 
                 <Card
                 color="bg-gradient-to-r from-red-600 to-zinc-500"
                 title="Sigma Technology Cloud"
@@ -55,7 +55,7 @@ export default function Work() {
             </Link>
 
             {/* 5. Areachica/Clira */}
-            <Link href="/work/areachica" className="block"> 
+            <Link href="/under-construction" className="block"> 
                 <Card
                 color="bg-gradient-to-r from-violet-500 to-fuchsia-400"
                 title="AreaChica/Clira"
@@ -65,7 +65,7 @@ export default function Work() {
             </Link>
 
             {/* 6. Försäkringskassan */}
-            <Link href="/work/forsakringskassan" className="block"> 
+            <Link href="/under-construction" className="block"> 
                 <Card
                 color="bg-gradient-to-r from-green-800 to-gray-100"
                 title="Försäkringskassan"
@@ -75,7 +75,7 @@ export default function Work() {
             </Link>
 
             {/* 7. Dreams */}
-            <Link href="/work/dreams" className="block"> 
+            <Link href="/under-construction" className="block"> 
                 <Card
                 color="bg-gradient-to-r from-emerald-600 to-green-900"
                 title="Dreams"

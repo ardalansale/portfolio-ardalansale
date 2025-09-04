@@ -11,7 +11,7 @@ import AboutSection from '@/components/AboutText';
 const sections = [
     {
         title: "I am",
-        content: "a creative problem-solver who loves turning ideas into real, usable products. I get energy from working with people, bouncing ideas around and celebrating wins together. For me, design is simply about creating something that people genuinely enjoy."
+        content: "a creative problem-solver, based in Stockholm, who loves turning ideas into real, usable products. I get energy from working with people, bouncing ideas around and celebrating wins together. For me, design is simply about creating something that people genuinely enjoy."
     },
 
     {
