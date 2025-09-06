@@ -72,6 +72,16 @@ h4 {
   @apply text-gray-600 dark:text-neutral-200
 }
 
+.nav-link--active {
+  @apply text-gray-400 dark:text-gray-500;
+}
+
+
+.nav-link--hover {
+  @apply hover:underline decoration-blue-300 decoration-3;
+}
+
+
 /* Projects */
 .projects-section {
   @apply space-y-10;

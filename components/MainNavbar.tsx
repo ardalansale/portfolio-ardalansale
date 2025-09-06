@@ -37,7 +37,7 @@ export default function MainNavbar() {
             {/* Humburgarmeny-knapp */}
             <button
                 onClick={() => setMenuOpen(!menuOpen)}
-                className='lg:hidden'
+                className='lg:hidden '
                 aria-label='Toggle menu'
                 >
                 {menuOpen ? 
@@ -49,7 +49,7 @@ export default function MainNavbar() {
             
             {/* Ovarlay som täcker allt under hamburgarmenyns lista */}
             {menuOpen && (
-                <div className='fixed inset-0 bg-black/40 z-30 lg:hidden'
+                <div className='fixed inset-0 bg-black/60 z-30 lg:hidden bg'
                 onClick={() => setMenuOpen(false)}
                 />
             )}
@@ -67,7 +67,7 @@ export default function MainNavbar() {
                         <Link
                         href={link.href}
                         className={`py-2 block text-center nav-link ${
-                            pathname === link.href ? 'text-gray-500' : 'hover:underline'}
+                            pathname === link.href ? 'nav-link--active' : 'nav-link--hover'}
                         active:bg-blue-100 active:rounded-md transition-all duration-150 lg:active:bg-transparent`}
                         onClick={() => setMenuOpen(false)}
                     >

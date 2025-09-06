@@ -27,7 +27,7 @@ const sections = [
 
 export default function About() {
     return (
-        <main className="flex flex-row gap-2 max-w-7xl p-6">
+        <main className='grid lg:grid-cols-2 grid-cols-1 gap-20 max-w-7xl mx-auto p-6'>
             {/* Textyta */}
             <article className="flex flex-col flex-1 gap-8">
                 {sections.map((section, index) => (
@@ -40,7 +40,7 @@ export default function About() {
             </article>
 
             {/* Bildyta */}
-            <section className='flex flex-col flex-1 gap-4'>
+            <section className='grid lg:grid-cols-1 grid-cols-2 grid-cols-2 gap-4'>
                 <figure>
                     <Image
                         src="/images/ardalan.webp"
