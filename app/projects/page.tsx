@@ -206,7 +206,7 @@ export default function Projects() {
 
                 {/* Ozweego */}
                 <ProjectMotion
-                src="/images/videos/ozweego.webp"
+                title="1. Adidas - Ozweego"
                 alt="a black and white sketch of me"
                 demoUrl="https://cdn-prod-ccv.adobe.com/IMAwIA4BDEC/rend/IMAwIA4BDEC_576.mp4?hdnts=st%3D1757015819%7Eexp%3D1757275019%7Eacl%3D%2Fshared_assets%2Fimage%2F*%21%2Fz%2FIMAwIA4BDEC%2Frend%2F*%21%2Fi%2FIMAwIA4BDEC%2Frend%2F*%21%2FIMAwIA4BDEC%2Frend%2F*%21%2FIMAwIA4BDEC%2Fimage%2F*%21%2FIMAwIA4BDEC%2Fcaptions%2F*%7Ehmac%3Dd39c3d7110525131cf8635748296c01012536f883ec28a1bdf7249575396781d"
                 />
