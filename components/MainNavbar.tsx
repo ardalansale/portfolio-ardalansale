@@ -58,8 +58,8 @@ export default function MainNavbar() {
             <ul 
                 className={`${
                     menuOpen ? 'flex' : 'hidden'}
-                } absolute top-full left-0 w-full flex-col gap-6 bg-white p-6 rounded shadow-md z-40 
-                lg:static lg:flex lg:flex-row lg:mt-0 lg:shadow-none  lg:justify-center lg:items-center lg:w-full`}
+                } absolute top-full left-0 w-full flex-col gap-6 bg-theme p-6 rounded shadow-md z-40 
+                lg:static lg:flex lg:flex-row lg:mt-0 lg:shadow-none lg:justify-center lg:items-center lg:w-full lg:bg-transparent`}
             >
                 
                 {links.map((link) => (

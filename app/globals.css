@@ -6,12 +6,12 @@
   --foreground: #000000;
 }
 
-/* @media (prefers-color-scheme: dark) { /Avaktiverar då jag vill endast ha ett tema/
+@media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-} */
+}
 
 @theme inline {
   --color-background: var(--background);
@@ -27,6 +27,10 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-ibm-plex-mono), Arial, Helvetica, sans-serif;
+}
+
+.bg-theme {
+  background-color: var(--color-background);
 }
 
 /* Fade In effect för hela sidan */
