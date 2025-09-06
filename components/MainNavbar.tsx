@@ -47,12 +47,19 @@ export default function MainNavbar() {
                 )}    
             </button>
             
+            {/* Ovarlay som täcker allt under hamburgarmenyns lista */}
+            {menuOpen && (
+                <div className='fixed inset-0 bg-black/40 z-30 lg:hidden'
+                onClick={() => setMenuOpen(false)}
+                />
+            )}
+
             {/* Länkar */}
             <ul 
-                className={`flex-col gap-6 bg-white mt-4 p-6 rounded shadow-md z-40
-                    ${
-                    menuOpen ? 'flex' : 'hidden'
-                } lg:flex lg:flex-row lg:mt-0 mt-4 p-6 rounded shadow-md z-40 lg:bg-transparent lg:p-0 lg:shadow-none`}
+                className={`${
+                    menuOpen ? 'flex' : 'hidden'}
+                } absolute top-full left-0 w-full flex-col gap-6 bg-white p-6 rounded shadow-md z-40 
+                lg:static lg:flex lg:flex-row lg:mt-0 lg:shadow-none`}
             >
                 
                 {links.map((link) => (
