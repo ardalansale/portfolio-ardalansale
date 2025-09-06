@@ -67,10 +67,8 @@ export default function MainNavbar() {
                         <Link
                         href={link.href}
                         className={`py-2 block text-center ${
-                            pathname === link.href
-                            ? 'text-gray-500'
-                            : 'hover:underline'
-                        }`}
+                            pathname === link.href ? 'text-gray-500' : 'hover:underline'}
+                        active: scale-95 active:bg-blue-100 active:rounded-md transition-all duration-150 lg:active:scale-100 lg:active:bg-transparent`}
                         onClick={() => setMenuOpen(false)}
                     >
                         {link.name}
