@@ -13,7 +13,7 @@ export default function Footer() {
                     <li key={link.name}>
                         <a
                             href={link.href}
-                            className="hover:underline"
+                            className="nav-link--hover"
                             target="_blank"
                             rel="noopener noreferrer"
                         >

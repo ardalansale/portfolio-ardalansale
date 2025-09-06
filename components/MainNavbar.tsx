@@ -68,7 +68,7 @@ export default function MainNavbar() {
                         href={link.href}
                         className={`py-2 block text-center nav-link ${
                             pathname === link.href ? 'nav-link--active' : 'nav-link--hover'}
-                        active:bg-blue-100 active:rounded-md transition-all duration-150 lg:active:bg-transparent`}
+                        active:bg-blue-100 dark:active:bg-blue-500 active:rounded-md transition-all duration-150 lg:active:bg-transparent`}
                         onClick={() => setMenuOpen(false)}
                     >
                         {link.name}
