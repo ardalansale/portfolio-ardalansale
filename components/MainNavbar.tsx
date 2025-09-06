@@ -33,47 +33,43 @@ export default function MainNavbar() {
     // Navbar styling 
     return (
         <nav className='flex flex-col justify-center items-center mt-30 mb-30 py-2 relative z-50'>
+
             {/* Humburgarmeny-knapp */}
             <button
                 onClick={() => setMenuOpen(!menuOpen)}
-                className='lg:hidden absolute top-4 right-6 p-2 '
+                className='lg:hidden'
                 aria-label='Toggle menu'
                 >
                 {menuOpen ? (
-                    <X className='w-10 h-10 transform rotate-90 transition duration-300 '/>
+                    <X className='w-10 h-10'/>
                 ) : ( 
-                    <Menu className='w-10 h-10 transition duration-300 '/>
+                    <Menu className='w-10 h-10'/>
                 )}    
             </button>
-
+            
             {/* Länkar */}
-            {menuOpen && (
-                <div className='fixed inset-0 bg-black opacity-30 z-30 lg:hidden'
-                onClick={() => setMenuOpen(false)}
-            />
-
-            )}
             <ul 
-                className={`
-                    ${ menuOpen ? 'flex' : 'hidden'
-                } flex-col lg:flex lg:flex-row gap-8 bg-white absolute top-16 right-6 p-10 rounded shadow-md z-40 
-                lg:static lg:bg-transparent lg:p-0 lg:shadow-none`}
-                >
-            {links.map((link) => (
-                <li key={link.name}>
-                    <Link
-                    href={link.href}
-                    className={`py-2 block text-center ${
-                        pathname === link.href
-                        ? 'text-gray-500'
-                        : 'hover:underline'
-                    }`}
-                    onClick={() => setMenuOpen(false)}
+                className={`flex-col gap-6 bg-white mt-4 p-6 rounded shadow-md z-40
+                    ${
+                    menuOpen ? 'flex' : 'hidden'
+                } lg:flex lg:flex-row lg:mt-0 mt-4 p-6 rounded shadow-md z-40 lg:bg-transparent lg:p-0 lg:shadow-none`}
+            >
+                
+                {links.map((link) => (
+                    <li key={link.name}>
+                        <Link
+                        href={link.href}
+                        className={`py-2 block text-center ${
+                            pathname === link.href
+                            ? 'text-gray-500'
+                            : 'hover:underline'
+                        }`}
+                        onClick={() => setMenuOpen(false)}
                     >
-                    {link.name}
-                    </Link>
-                </li>
-            ))}
+                        {link.name}
+                        </Link>
+                    </li>
+                ))}
             </ul>
         </nav>
     );
