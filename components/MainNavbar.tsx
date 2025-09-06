@@ -37,11 +37,11 @@ export default function MainNavbar() {
             {/* Humburgarmeny-knapp */}
             <button
                 onClick={() => setMenuOpen(!menuOpen)}
-                className='lg:hidden '
+                className='lg:hidden relative w-12 h-12'
                 aria-label='Toggle menu'
                 >
                 {menuOpen ? 
-                    <X className='w-10 h-10'/> : <Menu className='w-10 h-10'/>} 
+                    <X className='w-12 h-12'/> : <Menu className='w-12 h-12'/>} 
                 <span className="text-xs">
                     {menuOpen ? "Close" : "Menu"}
                 </span> 
@@ -68,7 +68,7 @@ export default function MainNavbar() {
                         href={link.href}
                         className={`py-2 block text-center nav-link ${
                             pathname === link.href ? 'nav-link--active' : 'nav-link--hover'}
-                        active:bg-blue-100 dark:active:bg-blue-500 active:rounded-md transition-all duration-150 lg:active:bg-transparent`}
+                        active:bg-blue-100 dark:active:bg-blue-500 active:rounded-md transition-all duration-150 lg:active:bg-transparent lg:dark:active:bg-transparent`}
                         onClick={() => setMenuOpen(false)}
                     >
                         {link.name}
