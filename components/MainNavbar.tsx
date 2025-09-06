@@ -43,7 +43,7 @@ export default function MainNavbar() {
                 {menuOpen ? 
                     <X className='w-10 h-10'/> : <Menu className='w-10 h-10'/>} 
                 <span className="text-xs">
-                    {menuOpen ? "Closed" : "Menu"}
+                    {menuOpen ? "Close" : "Menu"}
                 </span> 
             </button>
             
