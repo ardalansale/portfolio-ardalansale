@@ -4,9 +4,13 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation"; // Används för att markera aktiv länk i navbar baserat på aktuell sida
+import { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react"; // Lucide-ikoner för hamburgermeny
+
 
 export default function MainNavbar() {
-    const pathname = usePathname(); // Array med alla länkar
+    const pathname = usePathname(); // Hämtar aktuell sida
+    const [menuOpen, setMenuOpen] = useState(false); // Toggle för mobilmeny
     const links = [
         { name: "Home", href: "/" },
         { name: "Work", href: "/work" },
@@ -15,26 +19,62 @@ export default function MainNavbar() {
         { name: "Contact", href: "/contact" },
     ];
 
-    return ( // Navbar styling 
-        <nav className='flex flex-col justify-center items-center mt-30 mb-30 py-2 font-normal text-black'>
-            <ul className="flex gap-8">
+// För att snabbt stänga hamburgarmenyn när skärmenstorleken ändras
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth >= 1024) {
+                setMenuOpen(false);
+            }
+        };
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+    
+    // Navbar styling 
+    return (
+        <nav className='flex flex-col justify-center items-center mt-30 mb-30 py-2 relative z-50'>
+            {/* Humburgarmeny-knapp */}
+            <button
+                onClick={() => setMenuOpen(!menuOpen)}
+                className='lg:hidden absolute top-4 right-6 p-2 '
+                aria-label='Toggle menu'
+                >
+                {menuOpen ? (
+                    <X className='w-10 h-10 transform rotate-90 transition duration-300 '/>
+                ) : ( 
+                    <Menu className='w-10 h-10 transition duration-300 '/>
+                )}    
+            </button>
+
+            {/* Länkar */}
+            {menuOpen && (
+                <div className='fixed inset-0 bg-black opacity-30 z-30 lg:hidden'
+                onClick={() => setMenuOpen(false)}
+            />
+
+            )}
+            <ul 
+                className={`
+                    ${ menuOpen ? 'flex' : 'hidden'
+                } flex-col lg:flex lg:flex-row gap-8 bg-white absolute top-16 right-6 p-10 rounded shadow-md z-40 
+                lg:static lg:bg-transparent lg:p-0 lg:shadow-none`}
+                >
             {links.map((link) => (
                 <li key={link.name}>
                     <Link
                     href={link.href}
-                    className={`py-2 ${
+                    className={`py-2 block text-center ${
                         pathname === link.href
-                        ? "text-gray-500"
-                        : "hover:underline"
+                        ? 'text-gray-500'
+                        : 'hover:underline'
                     }`}
+                    onClick={() => setMenuOpen(false)}
                     >
-
                     {link.name}
-
                     </Link>
                 </li>
             ))}
             </ul>
         </nav>
-    )
+    );
 };
