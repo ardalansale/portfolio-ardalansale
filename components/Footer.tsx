@@ -8,7 +8,7 @@ export default function Footer() {
     return (
         <div className='flex flex-col gap-8 max-w-170 mx-auto justify-center items-center mt-30 mb-30'>
             <nav>
-                <ul className='flex gap-4 text-gray-400'>
+                <ul className='flex gap-4 nav-link'>
                 {links.map((link) => (
                     <li key={link.name}>
                         <a
@@ -23,7 +23,7 @@ export default function Footer() {
                 ))}
                 </ul>
             </nav>
-            <p className='text-gray-300'>© 2025 Ardalan Sale. All Rights Reserved.</p>
+            <p className='text-gray-300 dark:text-gray-700'>© 2025 Ardalan Sale. All Rights Reserved.</p>
         </div>
     )
 };

@@ -10,12 +10,12 @@ export default function ProjectMotion({ src, alt, demoUrl }: ProjectMotionProps)
     const isVideo = demoUrl?.includes(".mp4");
 
     return (
-        <div className="bg-white rounded-lg border-gray-400 shadow-md">
+        <div>
             {isVideo && demoUrl ? (
             <video
                 controls
                 width="100%"
-                className='rounded-lg'
+                className='rounded-lg cursor-pointer'
             >
                 <source src={demoUrl} type="video/mp4" />
                 Din webbläsare stödjer inte video-taggen.

@@ -61,6 +61,17 @@ h4 {
   @apply font-medium;
 }
 
+.p-standard {
+  @apply text-gray-700 dark:text-neutral-200
+}
+.item-container {
+  @apply flex flex-col p-6 gap-2 bg-white dark:bg-zinc-900 border-gray-100 rounded-lg cursor-pointer shadow-md dark:shadow-neutral-800 hover:shadow-xl transition-shadow duration-200;
+}
+
+.nav-link {
+  @apply text-gray-600 dark:text-neutral-200
+}
+
 /* Projects */
 .projects-section {
   @apply space-y-10;
@@ -75,7 +86,7 @@ h4 {
 }
 
 .projects-section__description {
-  @apply text-gray-600 text-lg;
+  @apply text-gray-600 dark:text-neutral-200 text-lg;
 }
 
 .projects-section__items {

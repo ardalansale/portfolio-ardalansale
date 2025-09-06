@@ -8,7 +8,7 @@ interface ProjectGraphicsProps {
 
 export default function ProjectGraphics ({ src, alt, className }: ProjectGraphicsProps) {
     return (
-        <div className={`flex flex-col justify-center items-center p-6 gap-2 bg-white border border-gray-100 rounded-lg cursor-pointer shadow-md hover:shadow-xl transition-shadow duration-200 ${className}`} >
+        <div className={`justify-center items-center item-container ${className}`} >
             <Image
             src={src}
             alt={alt}

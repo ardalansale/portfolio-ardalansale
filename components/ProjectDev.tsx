@@ -34,9 +34,9 @@ const ProjectDev = ({ title, description, tags, demoUrl}: ProjectProps) => {
 
     return (
         <Wrapper>
-            <div className='flex flex-col p-6 gap-2 bg-white border-1 border-gray-100 rounded-lg cursor-pointer shadow-md hover:shadow-xl transition-shadow duration-200'>
-                <h3 className='font-semibold'>{title}</h3>
-                <p className='text-gray-700 mb-4'>{description}</p>
+            <div className='item-container'>
+                <h3 className='font-semibold dark:text-cyan-100'>{title}</h3>
+                <p className='p-standard mb-4'>{description}</p>
                 <div className='flex flex-wrap gap-2'>
                     {tags.map((tag) => (
                         <span

@@ -18,7 +18,7 @@ export default function ContactInfo({items}: ContactInfoProps) {
                     {href ? (
                         <a 
                         href={href}
-                        className="text-blue-500 hover:underline"
+                        className="text-blue-700 dark:text-blue-500 hover:underline"
                         {...linkProps}
                         >
                         {value}
