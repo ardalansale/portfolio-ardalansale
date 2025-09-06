@@ -40,11 +40,11 @@ export default function MainNavbar() {
                 className='lg:hidden'
                 aria-label='Toggle menu'
                 >
-                {menuOpen ? (
-                    <X className='w-10 h-10'/>
-                ) : ( 
-                    <Menu className='w-10 h-10'/>
-                )}    
+                {menuOpen ? 
+                    <X className='w-10 h-10'/> : <Menu className='w-10 h-10'/>} 
+                <span className="text-xs">
+                    {menuOpen ? "Closed" : "Menu"}
+                </span> 
             </button>
             
             {/* Ovarlay som täcker allt under hamburgarmenyns lista */}
