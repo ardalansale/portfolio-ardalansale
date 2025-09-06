@@ -37,16 +37,22 @@ export default function MainNavbar() {
             {/* Humburgarmeny-knapp */}
             <button
                 onClick={() => setMenuOpen(!menuOpen)}
-                className='lg:hidden relative w-12 h-12'
+                className='lg:hidden relative w-12 h-20'
                 aria-label='Toggle menu'
+            >
+                <div className="absolute inset-0 transition-all duration-230 ease-in-out"
+                    style={{ opacity: menuOpen ? 0 : 1, transform: menuOpen ? 'scale(-0.8)' : 'scale(1)' }}
                 >
-                {menuOpen ? 
-                    <X className='w-12 h-12'/> : <Menu className='w-12 h-12'/>} 
-                <span className="text-xs">
-                    {menuOpen ? "Close" : "Menu"}
-                </span> 
+                    <Menu className='w-12 h-12'/>
+                    <span className="text-xs mt-1">Menu</span>
+                </div>
+                <div className="absolute inset-0 transition-all duration-230 ease-in-out"
+                    style={{ opacity: menuOpen ? 1 : 0, transform: menuOpen ? 'scale(1)' : 'scale(-0.8)' }}
+                >
+                    <X className='w-12 h-12'/>
+                    <span className="text-xs mt-1">Close</span>
+                </div>
             </button>
-            
             {/* Ovarlay som täcker allt under hamburgarmenyns lista */}
             {menuOpen && (
                 <div className='fixed inset-0 bg-black/60 z-30 lg:hidden bg'
