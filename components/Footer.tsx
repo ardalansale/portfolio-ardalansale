@@ -6,9 +6,9 @@ export default function Footer() {
     ];
 
     return (
-        <div className='flex flex-col gap-8 max-w-170 mx-auto justify-center items-center mt-20 mb-30'>
+        <div className='flex flex-col gap-8 max-w-90 mx-auto justify-center items-center mt-20 mb-30'>
             <nav>
-                <ul className='flex gap-4 nav-link'>
+                <ul className='flex flex-col lg:flex-row items-center gap-4 nav-link'>
                 {links.map((link) => (
                     <li key={link.name}>
                         <a
@@ -23,7 +23,11 @@ export default function Footer() {
                 ))}
                 </ul>
             </nav>
-            <p className='text-gray-300 dark:text-gray-700'>© 2025 Ardalan Sale. All Rights Reserved.</p>
+            <div className='flex flex-col gap-2 footer-text'>
+                <p>© 2025 Ardalan Sale.</p>
+                <p>All Rights Reserved.</p>
+                <p>Designed and developed by Ardalan Sale using Next.js, Tailwind CSS, and TypeScript.</p>
+            </div>
         </div>
     )
 };
