@@ -32,7 +32,7 @@ export default function MainNavbar() {
     
     // Navbar styling 
     return (
-        <nav className='flex flex-col justify-center items-center mt-30 mb-30 py-2 relative z-50'>
+        <nav className='flex flex-col justify-center items-center mt-6 mb-20 py-2 relative z-50'>
 
             {/* Humburgarmeny-knapp */}
             <button
