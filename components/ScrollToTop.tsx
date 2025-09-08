@@ -7,12 +7,6 @@ export default function ScrollToTop() {
     const [isVisible, setIsVisible] = useState(false);
     const [shouldRender, setShouldRender] = useState(false);
     const [fadeClass, setFadeClass] = useState("");
-    const [isMounted, setIsMounted] = useState(false);
-
-    // Säkerställ att komponenten bara körs på klienten för att kringå "suppressHydrationWarning"
-    useEffect(() => {
-        setIsMounted(true);
-    }, []);
 
     // Visar knapp när sidan scrollas ned och döljs när det scrollas upp
     useEffect(() => {
@@ -47,8 +41,6 @@ export default function ScrollToTop() {
             behavior: "smooth",
         });
     };
-
-    if (!isMounted) return null;
 
     // Visa inte knappen om den inte ska renderas
     if (!shouldRender) return null;

@@ -40,7 +40,7 @@ export default function About() {
             </article>
 
             {/* Bildyta */}
-            <section className='grid lg:grid-cols-1 grid-cols-2 grid-cols-2 gap-4'>
+            <section className='grid lg:grid-cols-1 grid-cols-2 gap-4'>
                 <figure>
                     <Image
                         src="/images/ardalan.webp"

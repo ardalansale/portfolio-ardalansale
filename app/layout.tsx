@@ -7,8 +7,7 @@ import MainNavbar from "@/components/MainNavbar";
 import Footer from "@/components/Footer";
 import LayoutContainer from "@/components/LayoutContainer";
 import FadeWrapper from "@/components/FadeWrapper";
-import ScrollToTop from "@/components/ScrollToTop";
-
+import ScrollToTop from '@/components/ScrollToTop';
 
 // Font
 const ibmPlexMono = IBM_Plex_Mono({
