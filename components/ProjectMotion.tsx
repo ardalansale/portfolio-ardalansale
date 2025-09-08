@@ -17,7 +17,7 @@ export default function ProjectMotion({ alt, demoUrl, title }: ProjectMotionProp
                 className='rounded-lg cursor-pointer'
             >
                 <source src={demoUrl} type="video/mp4" />
-                Your browser doesn't support this video.
+                Your browser doesn&apos;t support this video.
             </video>
 
             {title && (
