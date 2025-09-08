@@ -7,8 +7,6 @@ export const metadata: Metadata = {
 import { Metadata } from 'next';
 import Card from '@/components/WorkCard';
 import Link from 'next/link';
-import ScrollToTop from '@/components/ScrollToTop'
-
 
 export default function Work() {
     return (
@@ -86,8 +84,6 @@ export default function Work() {
                 />
             </Link>
             
-            <ScrollToTop />
-
         </main>
     );
 }

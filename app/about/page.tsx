@@ -7,8 +7,6 @@ export const metadata: Metadata = {
 import { Metadata } from 'next';
 import Image from 'next/image';
 import AboutSection from '@/components/AboutText';
-import ScrollToTop from '@/components/ScrollToTop'
-
 
 const sections = [
     {
@@ -65,9 +63,6 @@ export default function About() {
                     />
                 </figure>
             </section>
-
-            <ScrollToTop />
-            
         </main>
     )
 }

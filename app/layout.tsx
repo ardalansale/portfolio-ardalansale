@@ -5,8 +5,10 @@ import "./globals.css";
 // Mina componenter
 import MainNavbar from "@/components/MainNavbar";
 import Footer from "@/components/Footer";
-import LayoutContainer from "@/components/LayoutContainer"
-import FadeWrapper from "@/components/FadeWrapper"
+import LayoutContainer from "@/components/LayoutContainer";
+import FadeWrapper from "@/components/FadeWrapper";
+import ScrollToTop from "@/components/ScrollToTop";
+
 
 // Font
 const ibmPlexMono = IBM_Plex_Mono({
@@ -20,7 +22,7 @@ const ibmPlexMono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   title: "Ardalan Sale Portfolio",
   description: "Ardalan Sale's portfolio and showcase",
-  keywords: ['Ardalan Sale', ' ux designer', 'ui designer', 'portfolio', 'sweden', 'stockholm', 'sverige', 'frilans', 'freelance', 'ux/ui', 'frontend', 'developer', 'utvecklare'],
+  keywords: ['Ardalan Sale', 'ux designer', 'ui designer', 'portfolio', 'sweden', 'stockholm', 'sverige', 'frilans', 'freelance', 'ux/ui', 'frontend', 'developer', 'utvecklare'],
 };
 
 // Sidstruktur för alla sidor
@@ -40,6 +42,8 @@ export default function RootLayout({
             </main>
           </FadeWrapper>
 
+          <ScrollToTop/>
+        
           <Footer/>
         </LayoutContainer>
       </body>

@@ -8,7 +8,6 @@ import { Metadata } from 'next'
 import ProjectDev from '@/components/ProjectDev'
 import ProjectGraphics from '@/components/ProjectGraphics'
 import ProjectMotion from '@/components/ProjectMotion'
-import ScrollToTop from '@/components/ScrollToTop'
 
 export default function Projects() {
     return (
@@ -214,9 +213,6 @@ export default function Projects() {
                 </div>
             </section>
 
-            <ScrollToTop />
-
-            
         </main>
     );
 }
