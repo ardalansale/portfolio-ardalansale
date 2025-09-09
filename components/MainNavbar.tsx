@@ -5,18 +5,18 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation"; // Används för att markera aktiv länk i navbar baserat på aktuell sida
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react"; // Lucide-ikoner för hamburgermeny
+import { Menu, X, House, BriefcaseBusiness, Wallpaper, User, Mail } from "lucide-react"; // Lucide-ikoner för hamburgermeny
 
 
 export default function MainNavbar() {
     const pathname = usePathname(); // Hämtar aktuell sida
     const [menuOpen, setMenuOpen] = useState(false); // Toggle för mobilmeny
     const links = [
-        { name: "Home", href: "/" },
-        { name: "Work", href: "/work" },
-        { name: "Projects", href: "/projects" },
-        { name: "About", href: "/about" },
-        { name: "Contact", href: "/contact" },
+        { name: "Home", href: "/", icon: <House className="lg:hidden w-4 h-4 inline-block"/>},
+        { name: "Work", href: "/work", icon: <BriefcaseBusiness className="lg:hidden w-4 h-4 inline-block"/> },
+        { name: "Projects", href: "/projects", icon: <Wallpaper className="lg:hidden w-4 h-4 inline-block"/> },
+        { name: "About", href: "/about", icon: <User className="lg:hidden w-4 h-4 inline-block"/> },
+        { name: "Contact", href: "/contact", icon: <Mail className="lg:hidden w-4 h-4 inline-block"/> },
     ];
 
 // För att snabbt stänga hamburgarmenyn när skärmenstorleken ändras
@@ -55,7 +55,7 @@ export default function MainNavbar() {
             </button>
             {/* Ovarlay som täcker allt under hamburgarmenyns lista */}
             {menuOpen && (
-                <div className='fixed inset-0 bg-black/60 z-30 lg:hidden bg'
+                <div className='fixed inset-0 bg-black/60 z-30 lg:hidden'
                 onClick={() => setMenuOpen(false)}
                 />
             )}
@@ -77,7 +77,10 @@ export default function MainNavbar() {
                         active:bg-blue-100 dark:active:bg-blue-500 active:rounded-md transition-all duration-150 lg:active:bg-transparent lg:dark:active:bg-transparent`}
                         onClick={() => setMenuOpen(false)}
                     >
-                        {link.name}
+                        <span className='flex items-center justify-center gap-2'>
+                            {link.icon}
+                            {link.name}
+                        </span>
                         </Link>
                     </li>
                 ))}

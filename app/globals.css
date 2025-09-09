@@ -84,7 +84,7 @@ h4 {
 }
 
 .nav-link--hover {
-  @apply hover:underline decoration-blue-300 decoration-3;
+  @apply lg:hover:underline lg:decoration-blue-300 lg:decoration-2;
 }
 
 /* Struktur */
