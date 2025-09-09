@@ -6,7 +6,7 @@ export default function Footer() {
     ];
 
     return (
-        <div className='flex flex-col gap-8 max-w-90 mx-auto justify-center items-center mt-20 mb-30'>
+        <div className='flex flex-col gap-20 max-w-90 mx-auto justify-center items-center mt-20 mb-30'>
             <nav>
                 <ul className='flex flex-col lg:flex-row items-center gap-4 nav-link'>
                 {links.map((link) => (
